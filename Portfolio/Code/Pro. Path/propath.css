@@ -1,0 +1,147 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #bbb;
+}
+
+a {
+    color: #4ca1af;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffbf00;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #2c3e50, #1e1e1e);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffbf00;
+}
+
+/* Intro Section */
+.experience-intro {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #2c2c2c;
+}
+
+.experience-intro h2 {
+    font-size: 2.5rem;
+    color: #4ca1af;
+    margin-bottom: 1rem;
+}
+
+.experience-intro p {
+    font-size: 1.1rem;
+    color: #b5b5b5;
+}
+
+/* Professional and Shadowing Experience Sections */
+.professional-experience, .shadowing-experience {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #333;
+}
+
+.professional-experience h2, .shadowing-experience h2 {
+    font-size: 2rem;
+    color: #4ca1af;
+    margin-bottom: 2rem;
+}
+
+.experience-card {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    background: #1e1e1e;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #b5b5b5;
+}
+
+.experience-card p strong {
+    font-weight: bold;
+    color: #c9c7c7;
+}
+
+.hover-grow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: #4ca1af;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffbf00;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
